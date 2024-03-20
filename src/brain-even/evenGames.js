@@ -1,11 +1,11 @@
 import _ from 'lodash';
-import sayLossPhrase from './sayLossPhrase.js';
+import sayLossPhrase from '../sayLossPhrase.js';
 import { question } from 'readline-sync';
 
 function gameProcess(name) {
-  let count = 0;
+  let score = 0;
 
-  while (count < 3) {
+  while (score < 3) {
     const questionNumber = _.random(1, 20);
     console.log(`Question: ${questionNumber}`);
     const yourAnswer = question('Your answer: ');
@@ -13,7 +13,7 @@ function gameProcess(name) {
 
     if (yourAnswer === correctAnswer) {
       console.log('Correct!');
-      count += 1;
+      score += 1;
     } else {
       console.log(sayLossPhrase(correctAnswer, yourAnswer, name));
       process.exit(1);
