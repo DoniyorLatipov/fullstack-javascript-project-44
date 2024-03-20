@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import sayHelloByName from '../src/brain-even/askNameSayHello.js';
-import gameProcess from '../srgitc/brain-even/even-games.js';
+import gameProcess from '../src/brain-even/evenGames.js';
 
 console.log('Welcome to the Brain Games');
 const name = sayHelloByName();
