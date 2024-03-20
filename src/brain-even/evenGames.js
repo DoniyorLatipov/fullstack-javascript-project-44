@@ -1,6 +1,6 @@
 import _ from 'lodash';
-import sayLossPhrase from '../sayLossPhrase.js';
 import { question } from 'readline-sync';
+import sayLossPhrase from '../sayLossPhrase.js';
 
 function gameProcess(name) {
   let score = 0;
