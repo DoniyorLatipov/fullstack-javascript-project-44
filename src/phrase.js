@@ -6,21 +6,21 @@ const phrases = {
     console.log('Welcome to the Brain Games!');
   },
   getName: function () {
-    question('May I have your name? ');
+    return question('May I have your name? ');
   },
   sayHi: function (name) {
     console.log(`Hello, ${name}!`);
   },
   //*** games instuction ***
   evenGameInstruction: function () {
-    console.log('Answer "yes" if the number is even, otherwise answer "no".d');
+    console.log('Answer "yes" if the number is even, otherwise answer "no".');
   },
   // *** game mechanics ***
   askQuestion: function (question) {
     console.log(`Question: ${question}`);
   },
   getAnswer: function () {
-    question('Your answer: ');
+    return question('Your answer: ');
   },
   correct: function () {
     console.log('Correct!');
