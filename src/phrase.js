@@ -18,6 +18,9 @@ const phrases = {
   calcGameInstruction: function sayHowToPlayBrainCalc() {
     console.log('What is the result of the expression?');
   },
+  gcdGamenstruction: function sayHowToPlayBrainGcd() {
+    console.log('Find the greatest common divisor of given numbers.');
+  },
   // *** game mechanics ***
   askQuestion: function askQuestion(questionText) {
     console.log(`Question: ${questionText}`);
