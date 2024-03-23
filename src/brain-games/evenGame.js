@@ -14,13 +14,13 @@ function gameProcess(name) {
       phrases.correct();
       score += 1;
     } else {
-      phrases.sayLossPhrase(correctAnswer, yourAnswer, name);
+      phrases.youLoss(correctAnswer, yourAnswer, name);
       break;
     }
   }
 
   if (score === 3) {
-    phrases.congratulations(name);
+    phrases.youWin(name);
   }
 }
 

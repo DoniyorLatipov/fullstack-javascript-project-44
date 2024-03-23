@@ -1,37 +1,38 @@
 import { question } from 'readline-sync';
 
 const phrases = {
-  //*** introduction ***
-  welcome: function () {
+  // *** introduction ***
+  welcome: function sayWelcome() {
     console.log('Welcome to the Brain Games!');
   },
-  getName: function () {
+  getName: function askName() {
     return question('May I have your name? ');
   },
-  sayHi: function (name) {
+  sayHi: function sayHelloByName(name) {
     console.log(`Hello, ${name}!`);
   },
-  //*** games instuction ***
-  evenGameInstruction: function () {
+  // *** games instuction ***
+  evenGameInstruction: function sayHowToPlayBrainEven() {
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
   },
   // *** game mechanics ***
-  askQuestion: function (question) {
-    console.log(`Question: ${question}`);
+  askQuestion: function askQuestion(questionText) {
+    console.log(`Question: ${questionText}`);
   },
-  getAnswer: function () {
+  getAnswer: function askYourAnswer() {
     return question('Your answer: ');
   },
-  correct: function () {
+  correct: function sayCorrect() {
     console.log('Correct!');
   },
   // *** ending ***
-  sayLossPhrase: function (currect, yourAnswer, name) {
+  youLoss: function sayLossPhrase(currect, yourAnswer, name) {
     console.log(
-      `'${yourAnswer}' is wrong answer ;(. Correct answer was '${currect}'. \nLet's try again, ${name}!`
+      `'${yourAnswer}' is wrong answer ;(. Correct answer was '${currect}'.`,
+      `\nLet's try again, ${name}!`,
     );
   },
-  congratulations: function (name) {
+  youWin: function congratulations(name) {
     console.log(`Congratulations, ${name}!`);
   },
 };
