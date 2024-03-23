@@ -1,8 +1,4 @@
 #!/usr/bin/env node
-import sayHelloByName from '../src/gameIntroduction.js';
-import gameProcess from '../src/brain-games/evenGame.js';
-import phrases from '../src/phrase.js';
+import gameProcess from '../src/index.js';
 
-const name = sayHelloByName();
-phrases.evenGameInstruction();
-gameProcess(name);
+gameProcess('even');
