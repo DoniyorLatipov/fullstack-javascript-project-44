@@ -85,7 +85,10 @@ const questions = {
     const value = _.random(1, 100);
 
     function doesNumIsPrime(val) {
-      if (val % 2 || val % 3 || val % 5) {
+      if ([2, 3, 5].includes(val)) {
+        return 'yes';
+      }
+      if (val % 2 === 0 || val % 3 === 0 || val % 5 === 0) {
         return 'no';
       } else {
         return 'yes';
