@@ -1,20 +1,28 @@
 import _ from 'lodash';
-import { question } from 'readline-sync';
 import ckeckAnswer from '../answerCheck.js';
+import phrases from '../phrase.js';
 
 function gameProcess(name) {
   let score = 0;
 
   while (score < 3) {
     const questionNumber = _.random(1, 20);
-    console.log(`Question: ${questionNumber}`);
-    const yourAnswer = question('Your answer: ');
+    phrases.askQuestion(questionNumber);
+    const yourAnswer = phrases.getAnswer();
     const correctAnswer = `${questionNumber % 2 === 0 ? 'yes' : 'no'}`;
 
-    ckeckAnswer(correctAnswer, yourAnswer, score, name);
+    if (ckeckAnswer(correctAnswer, yourAnswer)) {
+      phrases.correct();
+      score += 1;
+    } else {
+      phrases.sayLossPhrase(correctAnswer, yourAnswer, name);
+      break;
+    }
   }
 
-  console.log(`Congratulations, ${name}!`);
+  if (score === 3) {
+    phrases.congratulations(name);
+  }
 }
 
 export default gameProcess;
