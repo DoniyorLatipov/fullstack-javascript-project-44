@@ -22,6 +22,9 @@ const phrases = {
   getAnswer: function () {
     question('Your answer: ');
   },
+  correct: function () {
+    console.log('Correct!');
+  },
   // *** ending ***
   sayLossPhrase: function (currect, yourAnswer, name) {
     console.log(
