@@ -88,6 +88,9 @@ const questions = {
       if ([2, 3, 5].includes(val)) {
         return 'yes';
       }
+      if (val === 1) {
+        return 'no';
+      }
       if (val % 2 === 0 || val % 3 === 0 || val % 5 === 0) {
         return 'no';
       }
