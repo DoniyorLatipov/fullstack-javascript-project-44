@@ -71,7 +71,7 @@ const questions = {
       progression.push(fitrstNum + coefficient * i);
     }
 
-    //same
+    // same
     const index = _.random(0, 9);
     const hiddenNumber = progression[index];
     progression[index] = '..';
@@ -90,9 +90,8 @@ const questions = {
       }
       if (val % 2 === 0 || val % 3 === 0 || val % 5 === 0) {
         return 'no';
-      } else {
-        return 'yes';
       }
+      return 'yes';
     }
 
     return {
