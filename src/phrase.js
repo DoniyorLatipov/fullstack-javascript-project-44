@@ -18,8 +18,11 @@ const phrases = {
   calcGameInstruction: function sayHowToPlayBrainCalc() {
     console.log('What is the result of the expression?');
   },
-  gcdGamenstruction: function sayHowToPlayBrainGcd() {
+  gcdGameInstruction: function sayHowToPlayBrainGcd() {
     console.log('Find the greatest common divisor of given numbers.');
+  },
+  progressionGameInstruction: function ayHowToPlayBrainprogression() {
+    console.log('What number is missing in the progression?');
   },
   // *** game mechanics ***
   askQuestion: function askQuestion(questionText) {
