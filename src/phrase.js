@@ -15,6 +15,9 @@ const phrases = {
   evenGameInstruction: function sayHowToPlayBrainEven() {
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
   },
+  calcGameInstruction: function sayHowToPlayBrainCalc() {
+    console.log('What is the result of the expression?');
+  },
   // *** game mechanics ***
   askQuestion: function askQuestion(questionText) {
     console.log(`Question: ${questionText}`);
