@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import ckeckAnswer from '../answerCheck.js';
 import phrases from '../phrase.js';
 
