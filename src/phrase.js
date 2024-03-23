@@ -24,6 +24,9 @@ const phrases = {
   progressionGameInstruction: function ayHowToPlayBrainprogression() {
     console.log('What number is missing in the progression?');
   },
+  primeGameInstruction: function sayHowToPlayBrainPrime() {
+    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+  },
   // *** game mechanics ***
   askQuestion: function askQuestion(questionText) {
     console.log(`Question: ${questionText}`);

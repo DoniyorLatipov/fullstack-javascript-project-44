@@ -61,7 +61,7 @@ const questions = {
       correctAnswer: `${gcd(num1, num2)}`,
     };
   },
-  progressionGameQuestion: function getQuestionsAbout() {
+  progressionGameQuestion: function getQuestionsAboutprogression() {
     const fitrstNum = _.random(1, 20);
     const coefficient = _.random(1, 10);
     const progression = [];
@@ -79,6 +79,22 @@ const questions = {
     return {
       question: progression.join(' '),
       correctAnswer: `${hiddenNumber}`,
+    };
+  },
+  primeGameQuestion: function GgetQuestionsAboutPrimeNumber() {
+    const value = _.random(1, 100);
+
+    function doesNumIsPrime(val) {
+      if (val % 2 || val % 3 || val % 5) {
+        return 'no';
+      } else {
+        return 'yes';
+      }
+    }
+
+    return {
+      question: value,
+      correctAnswer: doesNumIsPrime(value),
     };
   },
 };
