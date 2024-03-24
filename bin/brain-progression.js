@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import getProgressionQuestion from '../src/games/primeGame.js';
+import getProgressionQuestion from '../src/games/progressionGame.js';
 import gameProcess from '../src/index.js';
 import gameInstructions from '../src/gamesInstructions.js';
 
