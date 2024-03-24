@@ -1,6 +1,8 @@
 import _ from 'lodash';
 
 function getProgressionQuestion() {
+  // random firstNumber of progression from 1 to 20
+  // random coefficient of progression from 1 to 10
   const fitrstNum = _.random(1, 20);
   const coefficient = _.random(1, 10);
   const progression = [];

@@ -1,6 +1,7 @@
 import _ from 'lodash';
 
 function getGcdQuestion() {
+  // two randoms numbers from 1 to 100 for GCD game
   const num1 = _.random(1, 100);
   const num2 = _.random(1, 100);
 

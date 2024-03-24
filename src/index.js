@@ -6,7 +6,7 @@ function gameProcess(getAssets, gameInstruction) {
   console.log(gameInstruction);
 
   let score = 0;
-
+  // score < 3 - the game lasts until three correct answers
   while (score < 3) {
     const { question, correctAnswer } = getAssets();
     phrases.askQuestion(question);

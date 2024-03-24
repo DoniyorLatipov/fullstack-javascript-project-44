@@ -2,6 +2,7 @@ import _ from 'lodash';
 
 function getCalcQuestion() {
   const operators = ['+', '-', '*'];
+  // random numbers from 1 to 20 for calculation game
   const num1 = _.random(1, 20);
   const num2 = _.random(1, 20);
   const currentOperator = operators[_.random(0, operators.length - 1)];
