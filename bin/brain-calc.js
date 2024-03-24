@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+import getCalcAssets from '../src/games/calcGame.js';
 import gameProcess from '../src/index.js';
 
-gameProcess('calc');
+const calcGameAssets = getCalcAssets();
+gameProcess(calcGameAssets);

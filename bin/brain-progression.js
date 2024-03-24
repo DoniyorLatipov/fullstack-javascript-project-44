@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+import getProgressionAssets from '../src/games/primeGame.js';
 import gameProcess from '../src/index.js';
 
-gameProcess('progression');
+const progressionGameAssets = getProgressionAssets();
+gameProcess(progressionGameAssets);
