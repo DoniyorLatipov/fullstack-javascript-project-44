@@ -1,8 +1,10 @@
-import { question } from 'readline-sync';
+import phrases from './phrase.js';
 
-function sayHelloByName() {
-  const name = question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+function gameEntry() {
+  phrases.welcome();
+  const name = phrases.getName();
+  phrases.sayHi(name);
+  return name;
 }
 
-export default sayHelloByName;
+export default gameEntry;
