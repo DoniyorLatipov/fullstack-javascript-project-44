@@ -11,22 +11,6 @@ const phrases = {
   sayHi: function sayHelloByName(name) {
     console.log(`Hello, ${name}!`);
   },
-  // *** games instuction ***
-  evenGameInstruction: function sayHowToPlayBrainEven() {
-    console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  },
-  calcGameInstruction: function sayHowToPlayBrainCalc() {
-    console.log('What is the result of the expression?');
-  },
-  gcdGameInstruction: function sayHowToPlayBrainGcd() {
-    console.log('Find the greatest common divisor of given numbers.');
-  },
-  progressionGameInstruction: function ayHowToPlayBrainprogression() {
-    console.log('What number is missing in the progression?');
-  },
-  primeGameInstruction: function sayHowToPlayBrainPrime() {
-    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  },
   // *** game mechanics ***
   askQuestion: function askQuestion(questionText) {
     console.log(`Question: ${questionText}`);
