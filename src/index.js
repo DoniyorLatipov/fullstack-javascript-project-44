@@ -1,5 +1,4 @@
 import sayHelloByName from './gameIntroduction.js';
-import ckeckAnswer from './answerCheck.js';
 import phrases from './phrase.js';
 import gameQuestions from './questions.js';
 
@@ -14,7 +13,7 @@ function gameProcess(gameName) {
     phrases.askQuestion(question);
     const yourAnswer = phrases.getAnswer();
 
-    if (ckeckAnswer(correctAnswer, yourAnswer)) {
+    if (correctAnswer === yourAnswer) {
       phrases.correct();
       score += 1;
     } else {
