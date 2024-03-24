@@ -1,14 +1,14 @@
-import sayHelloByName from './gameIntroduction.js';
+import sayHelloByName from './cli.js';
 import phrases from './phrase.js';
 
-function gameProcess(gameAssets) {
+function gameProcess(getAssets, gameInstruction) {
   const name = sayHelloByName();
-  console.log(gameAssets.getInstruction());
+  console.log(gameInstruction);
 
   let score = 0;
 
   while (score < 3) {
-    const { question, correctAnswer } = gameAssets.getQuestion();
+    const { question, correctAnswer } = getAssets();
     phrases.askQuestion(question);
     const yourAnswer = phrases.getAnswer();
 

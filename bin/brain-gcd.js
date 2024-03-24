@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-import getGcdAssets from '../src/games/gcdGame.js';
+import getGcdQuestion from '../src/games/gcdGame.js';
 import gameProcess from '../src/index.js';
+import gameInstructions from '../src/gamesInstructions.js';
 
-const gcdGameAssets = getGcdAssets();
-gameProcess(gcdGameAssets);
+const gcdGameQuestion = getGcdQuestion;
+const gcdGameInstruction = gameInstructions('gcd');
+gameProcess(gcdGameQuestion, gcdGameInstruction);

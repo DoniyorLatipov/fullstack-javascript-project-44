@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-import getPrimeAssets from '../src/games/primeGame.js';
+import getPrimeQuestion from '../src/games/primeGame.js';
 import gameProcess from '../src/index.js';
+import gameInstructions from '../src/gamesInstructions.js';
 
-const primeGameAssets = getPrimeAssets();
-gameProcess(primeGameAssets);
+const primeGameQuestion = getPrimeQuestion;
+const primeGameInstruction = gameInstructions('prime');
+gameProcess(primeGameQuestion, primeGameInstruction);

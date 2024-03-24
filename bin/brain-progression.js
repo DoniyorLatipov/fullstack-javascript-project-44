@@ -1,6 +1,8 @@
 #!/usr/bin/env node
-import getProgressionAssets from '../src/games/primeGame.js';
+import getProgressionQuestion from '../src/games/primeGame.js';
 import gameProcess from '../src/index.js';
+import gameInstructions from '../src/gamesInstructions.js';
 
-const progressionGameAssets = getProgressionAssets();
-gameProcess(progressionGameAssets);
+const progressionGameQuestion = getProgressionQuestion;
+const progressionGameInstruction = gameInstructions('progression');
+gameProcess(progressionGameQuestion, progressionGameInstruction);
