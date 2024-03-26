@@ -4,5 +4,5 @@ import gameProcess from '../src/index.js';
 import gameInstructions from '../src/gamesInstructions.js';
 
 const evenGameQuestion = getEvenQuestion;
-const evenGameInstruction = gameInstructions('even');
+const evenGameInstruction = gameInstructions['even'];
 gameProcess(evenGameQuestion, evenGameInstruction);

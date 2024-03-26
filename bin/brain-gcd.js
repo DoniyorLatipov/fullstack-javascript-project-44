@@ -4,5 +4,5 @@ import gameProcess from '../src/index.js';
 import gameInstructions from '../src/gamesInstructions.js';
 
 const gcdGameQuestion = getGcdQuestion;
-const gcdGameInstruction = gameInstructions('gcd');
+const gcdGameInstruction = gameInstructions['gcd'];
 gameProcess(gcdGameQuestion, gcdGameInstruction);
