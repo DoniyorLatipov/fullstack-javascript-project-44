@@ -4,5 +4,5 @@ import gameProcess from '../src/index.js';
 import gameInstructions from '../src/gamesInstructions.js';
 
 const primeGameQuestion = getPrimeQuestion;
-const primeGameInstruction = gameInstructions['prime'];
+const primeGameInstruction = gameInstructions.prime;
 gameProcess(primeGameQuestion, primeGameInstruction);
