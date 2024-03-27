@@ -1,11 +1,8 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/DoniyorLatipov/fullstack-javascript-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DoniyorLatipov/fullstack-javascript-project-44/actions)",
+  "description": "five logic games that will help you work with numbers faster and more confidently (calculation, gcd, etc.)",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
@@ -14,7 +11,7 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "author": "",
+  "author": "DoniyorLatipov",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.21",
