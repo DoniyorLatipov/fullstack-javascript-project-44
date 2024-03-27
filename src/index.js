@@ -1,29 +1,26 @@
 import sayHelloByName from './cli.js';
 import phrases from './phrase.js';
 
+// the game lasts until three correct answers
+const roundsCount = 3;
 function gameProcess(getAssets, gameInstruction) {
   const name = sayHelloByName();
   console.log(gameInstruction);
 
-  let score = 0;
-  // score < 3 - the game lasts until three correct answers
-  while (score < 3) {
+  for (let i = 0; i < roundsCount; i += 1) {
     const { question, correctAnswer } = getAssets();
     phrases.askQuestion(question);
     const yourAnswer = phrases.getAnswer();
 
     if (correctAnswer === yourAnswer) {
       phrases.correct();
-      score += 1;
     } else {
       phrases.youLoss(correctAnswer, yourAnswer, name);
-      break;
+      return;
     }
   }
 
-  if (score === 3) {
-    phrases.youWin(name);
-  }
+  phrases.youWin(name);
 }
 
 export default gameProcess;
