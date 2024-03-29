@@ -9,7 +9,7 @@ Here are five logic games that will help you work with numbers faster and more c
 
 ```bash
 make install
-#or
+#and
 make link
 ```
 
