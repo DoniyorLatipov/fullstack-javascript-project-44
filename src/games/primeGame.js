@@ -1,11 +1,8 @@
 import _ from 'lodash';
 
 function doesItPrime(val) {
-  if (val === 1) {
+  if (val < 2) {
     return false;
-  }
-  if ([2, 3, 5, 7].includes(val)) {
-    return true;
   }
 
   // we start with 2 because all numbers are divisible by 1
@@ -21,10 +18,11 @@ function doesItPrime(val) {
 function getPrimeQuestion() {
   // random number from 1 to 100 for prime game
   const value = _.random(1, 100);
+  const text = doesItPrime(value) ? 'yes' : 'no';
 
   return {
     question: value,
-    correctAnswer: `${doesItPrime(value) ? 'yes' : 'no'}`,
+    correctAnswer: text,
   };
 }
 
