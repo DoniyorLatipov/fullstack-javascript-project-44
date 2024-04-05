@@ -16,7 +16,6 @@ function doesItPrime(val) {
 }
 
 function getPrimeQuestion() {
-  // random number from 1 to 100 for prime game
   const value = _.random(1, 100);
   const text = doesItPrime(value) ? 'yes' : 'no';
 

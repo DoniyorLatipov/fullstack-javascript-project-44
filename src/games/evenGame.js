@@ -5,7 +5,6 @@ function getEvenQuestion() {
 
   return {
     question: questionNumber,
-    // is it an even number or not
     correctAnswer: `${questionNumber % 2 === 0 ? 'yes' : 'no'}`,
   };
 }
