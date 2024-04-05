@@ -1,5 +1,8 @@
 import _ from 'lodash';
 
+import gameProcess from '../index.js';
+import gamesInstructions from '../gamesInstructions.js';
+
 function getEvenQuestion() {
   const questionNumber = _.random(1, 20);
 
@@ -9,4 +12,6 @@ function getEvenQuestion() {
   };
 }
 
-export default getEvenQuestion;
+export default function runEvenGame() {
+  gameProcess(getEvenQuestion, gamesInstructions.even);
+}

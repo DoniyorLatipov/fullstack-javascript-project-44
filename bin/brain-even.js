@@ -1,8 +1,4 @@
 #!/usr/bin/env node
-import getEvenQuestion from '../src/games/evenGame.js';
-import gameProcess from '../src/index.js';
-import gameInstructions from '../src/gamesInstructions.js';
+import runEvenGame from '../src/games/evenGame.js';
 
-const evenGameQuestion = getEvenQuestion;
-const evenGameInstruction = gameInstructions.even;
-gameProcess(evenGameQuestion, evenGameInstruction);
+runEvenGame();

@@ -1,8 +1,4 @@
 #!/usr/bin/env node
-import getProgressionQuestion from '../src/games/progressionGame.js';
-import gameProcess from '../src/index.js';
-import gameInstructions from '../src/gamesInstructions.js';
+import runProgressionGame from '../src/games/progressionGame';
 
-const progressionGameQuestion = getProgressionQuestion;
-const progressionGameInstruction = gameInstructions.progression;
-gameProcess(progressionGameQuestion, progressionGameInstruction);
+runProgressionGame();

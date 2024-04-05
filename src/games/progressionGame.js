@@ -1,5 +1,8 @@
 import _ from 'lodash';
 
+import gameProcess from '../index.js';
+import gameInstructions from '../gamesInstructions.js';
+
 function getProgressionQuestion() {
   const fitrstNum = _.random(1, 20);
   const coefficient = _.random(1, 10);
@@ -19,4 +22,6 @@ function getProgressionQuestion() {
   };
 }
 
-export default getProgressionQuestion;
+export default function runProgressionGame() {
+  gameProcess(getProgressionQuestion, gameInstructions.progression);
+}

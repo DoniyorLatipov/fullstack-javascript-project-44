@@ -1,5 +1,8 @@
 import _ from 'lodash';
 
+import gameProcess from '../index.js';
+import gameInstructions from '../gamesInstructions.js';
+
 function gcd(val1, val2) {
   let number1 = val1 > val2 ? val1 : val2;
   let number2 = val1 > val2 ? val2 : val1;
@@ -23,4 +26,6 @@ function getGcdQuestion() {
   };
 }
 
-export default getGcdQuestion;
+export default function runGcdGame() {
+  gameProcess(getGcdQuestion, gameInstructions.gcd);
+}

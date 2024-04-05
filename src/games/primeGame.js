@@ -1,5 +1,8 @@
 import _ from 'lodash';
 
+import gameProcess from '../index.js';
+import gameInstructions from '../gamesInstructions.js';
+
 function doesItPrime(val) {
   if (val < 2) {
     return false;
@@ -25,4 +28,6 @@ function getPrimeQuestion() {
   };
 }
 
-export default getPrimeQuestion;
+export default function runPrimeGame() {
+  gameProcess(getPrimeQuestion, gameInstructions.prime);
+}

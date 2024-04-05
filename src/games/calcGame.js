@@ -1,5 +1,8 @@
 import _ from 'lodash';
 
+import gameProcess from '../index.js';
+import gameInstructions from '../gamesInstructions.js';
+
 function calc(number1, number2, operator) {
   switch (operator) {
     case '+':
@@ -25,4 +28,6 @@ function getCalcQuestion() {
   };
 }
 
-export default getCalcQuestion;
+export default function runCalcGame() {
+  gameProcess(getCalcQuestion, gameInstructions.calc);
+}
