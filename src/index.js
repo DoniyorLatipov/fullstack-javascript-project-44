@@ -3,7 +3,7 @@ import phrases from './phrase.js';
 
 // the game lasts until three correct answers
 const roundsCount = 3;
-function gameProcess(getAssets, gameInstruction) {
+function runEngine(getAssets, gameInstruction) {
   const name = sayHelloByName();
   console.log(gameInstruction);
 
@@ -23,4 +23,4 @@ function gameProcess(getAssets, gameInstruction) {
   phrases.youWin(name);
 }
 
-export default gameProcess;
+export default runEngine;

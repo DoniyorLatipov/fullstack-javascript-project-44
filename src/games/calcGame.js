@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import gameProcess from '../index.js';
+import runEngine from '../index.js';
 import gameInstructions from '../gamesInstructions.js';
 
 function calc(number1, number2, operator) {
@@ -29,5 +29,5 @@ function getCalcQuestion() {
 }
 
 export default function runCalcGame() {
-  gameProcess(getCalcQuestion, gameInstructions.calc);
+  runEngine(getCalcQuestion, gameInstructions.calc);
 }

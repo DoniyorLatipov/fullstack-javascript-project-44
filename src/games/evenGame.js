@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import gameProcess from '../index.js';
+import runEngine from '../index.js';
 import gamesInstructions from '../gamesInstructions.js';
 
 function getEvenQuestion() {
@@ -13,5 +13,5 @@ function getEvenQuestion() {
 }
 
 export default function runEvenGame() {
-  gameProcess(getEvenQuestion, gamesInstructions.even);
+  runEngine(getEvenQuestion, gamesInstructions.even);
 }

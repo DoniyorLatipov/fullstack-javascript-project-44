@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import gameProcess from '../index.js';
+import runEngine from '../index.js';
 import gameInstructions from '../gamesInstructions.js';
 
 function getProgressionQuestion() {
@@ -23,5 +23,5 @@ function getProgressionQuestion() {
 }
 
 export default function runProgressionGame() {
-  gameProcess(getProgressionQuestion, gameInstructions.progression);
+  runEngine(getProgressionQuestion, gameInstructions.progression);
 }

@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-import gameProcess from '../index.js';
+import runEngine from '../index.js';
 import gameInstructions from '../gamesInstructions.js';
 
 function gcd(val1, val2) {
@@ -27,5 +27,5 @@ function getGcdQuestion() {
 }
 
 export default function runGcdGame() {
-  gameProcess(getGcdQuestion, gameInstructions.gcd);
+  runEngine(getGcdQuestion, gameInstructions.gcd);
 }
