@@ -19,7 +19,7 @@ make link
 
 Runs brain-games (say hello to you)
 
-[![Brain-games](https://asciinema.org/a/EPIXX3nHpXATIUQU0fXnxKdG8.svg)](https://asciinema.org/a/EPIXX3nHpXATIUQU0fXnxKdG8)
+[![brain-games.cast](https://asciinema.org/a/EBpYWagU9ObdGAmGWkkIhLKVh.svg)](https://asciinema.org/a/EBpYWagU9ObdGAmGWkkIhLKVh)
 
 ### Launch
 
@@ -33,7 +33,7 @@ brain-games
 
 Shows you a number and you need to answer whether it is even or not
 
-[![Brain-even](https://asciinema.org/a/mX2Qib47QoHJjTAwoH0GmwgmO.svg)](https://asciinema.org/a/mX2Qib47QoHJjTAwoH0GmwgmO)
+[![brain-even.cast](https://asciinema.org/a/liRLKpIs2JSV0tAnYQS8hkPxv.svg)](https://asciinema.org/a/liRLKpIs2JSV0tAnYQS8hkPxv)
 
 ### Launch
 
@@ -47,7 +47,7 @@ brain-even
 
 Shows you mathematical expressions and you have to solve them
 
-[![Brain-calc](https://asciinema.org/a/eAeI4gpH2j4dnyi6eRIjGi1RA.svg)](https://asciinema.org/a/eAeI4gpH2j4dnyi6eRIjGi1RA)
+[![brain-calc.cast](https://asciinema.org/a/29BQ3AZeTTjrroYv6hoAAXzjF.svg)](https://asciinema.org/a/29BQ3AZeTTjrroYv6hoAAXzjF)
 
 ### Launch
 
@@ -61,7 +61,7 @@ brain-calc
 
 Shows you two numbers and you need to find their gcd ([Greatest Common Divisor](https://en.wikipedia.org/wiki/Greatest_common_divisor))
 
-[![Brain-gcd](https://asciinema.org/a/3SAEgi39PzBtpkzk4fMkMYAbN.svg)](https://asciinema.org/a/3SAEgi39PzBtpkzk4fMkMYAbN)
+[![brain-gcd.cast](https://asciinema.org/a/zrgKEQXZgZbcFlzscnzn8A4Jl.svg)](https://asciinema.org/a/zrgKEQXZgZbcFlzscnzn8A4Jl)
 
 ### Launch
 
@@ -75,7 +75,7 @@ brain-gcd
 
 Shows you a progression of 10 numbers with one missing number you need to determine it
 
-[![Brain-progression](https://asciinema.org/a/QvItdLTD6aneTwAusZuJiwL5a.svg)](https://asciinema.org/a/QvItdLTD6aneTwAusZuJiwL5a)
+[![brain-progressopn.cast](https://asciinema.org/a/ydApBknutrMhcG1temNfa6oI4.svg)](https://asciinema.org/a/ydApBknutrMhcG1temNfa6oI4)
 
 ### Launch
 
@@ -90,7 +90,7 @@ brain-progression
 
 Shows you a number and you have to answer whether it is prime or not
 
-[![Brain-prime](https://asciinema.org/a/nX1C2MfZJuufIWhWY3vDBUYNY.svg)](https://asciinema.org/a/nX1C2MfZJuufIWhWY3vDBUYNY)
+[![brain-prime.cast](https://asciinema.org/a/Ipomz4gM0qhodlsmtugk2xIxX.svg)](https://asciinema.org/a/Ipomz4gM0qhodlsmtugk2xIxX)
 
 ### Launch
 
